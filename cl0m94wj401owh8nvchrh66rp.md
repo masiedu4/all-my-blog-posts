@@ -32,7 +32,7 @@ If you wish to sell your art online, there are several NFT platforms to select f
 
 ![The "upload and mint" collection form on Open Sea.](https://cdn.hashnode.com/res/hashnode/image/upload/v1646663096683/tBeC2WlSd.png)
 
-The other, more prevalent, way for large projects is to employ a token standard (ERC-721 or ERC-1155), store the collectibles on decentralized storage, and install the smart contract code on-chain. This approach enables artists and developers to incorporate specific features that marketplaces may lack.
+The other, more prevalent, way for large projects is to employ a token standard (ERC-721 or [ERC-1155](https://web3.hashnode.com/glossary/what-is-erc-1155)), store the collectibles on decentralized storage, and install the [smart contract code on-chain](https://web3.hashnode.com/glossary/what-are-smart-contracts). This approach enables artists and developers to incorporate specific features that marketplaces may lack.
 
 They can either construct their own website or marketplace where others can purchase art, or they can share the address of their smart contract with a marketplace to have their work featured.
 
