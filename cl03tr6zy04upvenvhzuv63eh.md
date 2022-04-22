@@ -1,4 +1,4 @@
-## Advanced Solidity for Developers Who Are Also Busy and Lazy.
+## Solidity for Developers Who Are Busy and Lazy.
 
 Solidity is a challenging programming language to learn.
 
