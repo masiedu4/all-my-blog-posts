@@ -12,7 +12,7 @@ However, dealing with the blockchain is not completely risk-free since there are
 
 Misinformation and disregarding a specific project are two of the most prevalent reasons people lose money while dealing with blockchain. That's [something I've been a victim of, too](https://www.michaelasiedu.com/5-things-ive-learned-since-making-the-switch-to-web30).
 
-I've compiled **a list of the five most crucial questions** anyone interested in working with the blockchain should ask themselves in order to limit the rate at which people lose their hard-earned money due to ignorance.
+I've compiled **a list of the four most crucial questions** anyone interested in working with the blockchain should ask themselves in order to limit the rate at which people lose their hard-earned money due to ignorance.
 
 [Flipping NFTs](https://web3.hashnode.com/how-much-does-it-cost-to-create-an-nft), buying and hodling tokens, supplying liquidity, engaging in DeFi, joining a DAO, and other strategies can all be viable options for making money in the cryptocurrency space.
 This article's points are broad and can be applied to any blockchain venture you'd like to invest in.
