@@ -56,7 +56,7 @@ If you have that kind of knowledge, you can go a step further and investigate an
 
 If you are a non-technical person, I recommend that you go through the trouble of finding a reliable and knowledgeable engineer to serve as your technical advisor or consultant.
 
-**When you have a lot of money, it's a good idea to hire and pay professionals.**
+**When you have a lot of money, it's a good idea to hire and pay experts.**
 
 It's difficult to create solutions for the chain, and most efforts are open to attack. Do your homework and take a deep breath. It will all pay off in the long run!
 
