@@ -1,4 +1,4 @@
-## Using React's useReducer() hook to manage complex states.
+## Using React’s useReducer() Hook to Manage Complex States.
 
 React is the most often used JavaScript library in software development, and it's more than simply pretty.
 
