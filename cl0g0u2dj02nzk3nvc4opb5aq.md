@@ -1,4 +1,4 @@
-## Using React's useEffect() hook to interact with APIs.
+## Using React’s useEffect() Hook to Interact with APIs.
 
 APIs are critical for web developers to understand because they are the backbone of every fully-fledged web application, thus we must be comfortable with them.
 
