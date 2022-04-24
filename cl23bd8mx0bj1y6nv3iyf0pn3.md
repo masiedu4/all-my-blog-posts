@@ -1,4 +1,4 @@
-## Build and Deploy and NFT Whitelist DApp with React.js, ethers.js, and Solidity.
+## Build and deploy an NFT Whitelist App with React and Solidity | Step-by-Step Tutorial.
 
 Working on the technical components of [NFTs](https://www.michaelasiedu.com/nfts-greater-physical-art-why-digital-art-will-completely-disrupt-physical-art) might result in a plethora of features that must be implemented, and these capabilities are coded into the smart contract and the project's minting/roadmap website.
 
