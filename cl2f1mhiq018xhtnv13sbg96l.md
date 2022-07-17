@@ -1,4 +1,4 @@
-## 7 Gas Optimization Techniques in Solidity to Reduce the Cost of Your Smart Contracts.
+## 7 Gas Optimization Techniques to Reduce the Cost of Your Smart Contracts.
 
 Blockchain technology may be the best and most significant thing to happen to humanity since the internet's inception.
 
