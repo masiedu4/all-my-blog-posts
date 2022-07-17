@@ -1,4 +1,4 @@
-## 4 Questions to Ask Before Investing in any Blockchain Venture.
+## What Should You Know Before Investing in Blockchain Technology?
 
 The blockchain has the potential to create the most wealth in human history.
 
