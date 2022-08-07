@@ -6,7 +6,6 @@ Achieving mastery in any field is difficult in this day and age when there is a 
 
 In my opinion, learning to code should be made easier through the education system and learning channels.
 
-Everyone who can write code, regardless of their ability level, can benefit from the proper information.
 
 To what end are we unable to make the lives of our students "easy" despite the fact that it appears so? With some work and a return to the roots, I'm confident the present and future generations of learners will benefit greatly.
 
@@ -25,22 +24,22 @@ I've found that the finest programmers are open-minded and willing to adjust thi
 
 "Knowing it all" is the best way to become obsolete as a developer.
 
-To put it simply, a know-it-all dismisses other people's opinions, remarks, and suggestions with arrogance.
+To put it simply, a **know-it-all** dismisses other people's opinions, remarks, and suggestions with arrogance.
 
 Disruption is inherent in the very nature of technology. Our old stacks are always being re-examined and deprecated when new technology or software comes out that is a big change.
 
-Working in an industry like this for more than a year is impossible. You must be able to move quickly, shield yourself, and adjust to any significant change that may come your way.
+Being stuck in an industry like this for more than a year is impossible. You must be able to move quickly, shield yourself, and adjust to any significant change that may come your way.
 
 There has been a lot of attention paid to software development in recent years, but when put into perspective, it's mind-boggling.
 
-You don't matter to technology. Is the addition of a new stack going to help you along the way? It's time to learn!
+Technology doesn't care about your "feeling". Is the addition of a new stack going to help you along the way? It's time to learn!
 
 **In order to be current, you must continually re-invent yourself.**
 
 
-### 2. Read code more than you write 
+### 2. Read code more  
 
-Regardless of how skeptical I am of the idea of reading more code than you create, the debate is worth the time.
+Regardless of how skeptical I am of the idea of reading more code than you write, the debate is worth the time.
 
 The two most fundamental laws that I've learned about reading and sharing ideas are directly related to my strong desire to do both.
 
@@ -50,7 +49,8 @@ Exposure is the goal of reading other people's codes.
 
 You'll be amazed at how much a short amount of exposure can improve your skills.
 
-If you've ever worked on a project with more than one developer, you know that the variety of coding styles can be intimidating. However, if you're lucky enough to work with talented programmers, you'll be pushed to learn a lot in a short period of time.
+If you've ever worked on a project with more than one developer, you know that the variety of coding styles can be intimidating. 
+However, if you're lucky enough to work with talented programmers, you'll be pushed to learn a lot in a short period of time.
 
 That's what you get when you read other people's codes!
 
@@ -64,7 +64,7 @@ If you're willing to put in the effort, you'll gain new problem-solving skills i
 
 ### 3. Connect and learn from the best
 
-Leaving the room when you are the smartest person in the room is no longer a secret, in my opinion.
+Leaving the room when you are the smartest person in the room is the smartest decision, in my opinion.
 
 **If you want to be considered a member of the 1%, you must be in the 0.999 percent.**
 
@@ -88,9 +88,9 @@ No building can be constructed without the use of wood. The sort of wood needed 
 
 I'll use two of my all-time favorite people's quotes to help illustrate my point.
 
-In the words of Naval Ravikant: **Start from the bottom up and "think clearly from the ground up.**" 
+> In the words of Naval Ravikant: **Start from the bottom up and "think clearly from the ground up.**" 
 
-**"In my opinion, first principles are more significant than analogies. In our daily lives, we use analogies to make sense of the world. When we employ an analogy, we're doing something because it's similar to something else that's been done or something that other people are doing. You start with the most fundamental realities and then work your way up from there"**, Elon Musk, CEO of Tesla Motors
+>"In my opinion, first principles are more significant than analogies. In our daily lives, we use analogies to make sense of the world. When we employ an analogy, we're doing something because it's similar to something else that's been done or something that other people are doing. You start with the most fundamental realities and then work your way up from there", Elon Musk, CEO of Tesla Motors
 
 Each and every tool or framework has been developed from the ground up and should be used in the same way.
 
@@ -112,7 +112,7 @@ These neurotic cells convey information from one part of the brain to another vi
 
 Our brains are terrible at multitasking, according to scientific research. That's why it's so important to be able to narrow down your interests and focus.
 
-The best way to learn is to focus on one subject at a time. Don't let the media or the news get you down.
+The best way to learn is to focus on one subject at a time. 
 
 Keep going until you can explain something to a 5-year-old and then move on.
 
@@ -120,7 +120,7 @@ Keep going until you can explain something to a 5-year-old and then move on.
 TL: DR?
 
 1. Constantly reinvent yourself
-2. Read code more than you write
+2. Read code more 
 3. Connect and learn from the best
 4. Fundamentals first, tools later
 5. Take your time 
