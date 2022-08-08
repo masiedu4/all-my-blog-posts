@@ -14,21 +14,16 @@ This unpopularity can be attributed to a variety of causes. According to my obse
 
 There is also the claim that writing successful tests is much more time-consuming than writing the implementation code.
 
-In the course of a short-term project with an experienced engineer, I was introduced to the concept of writing tests.
 
-To be able to write a reasonable test, I spent an entire day watching YouTube lessons and reading articles. There were flaws, but it was still a very important point in the company's development.
+As a general rule, most people are taught that testing is a one-way street. 
 
-As a general rule, most people are taught that testing is a one-way street. Your testing methods will be determined by the software you're developing and the stack that you're utilizing. White and black hat techniques, as well as frameworks like MobSF, are likely to be used by a developer focusing on mobile app security.
+Your testing methods will be determined by the software you're developing and the stack that you're utilizing. 
 
-Kent Beck, the software engineer who is credited with rediscovering the technique, did not make the claim that Test-Driven Development (TDD) supports simple designs and inspires confidence until 2003.
+White and black hat techniques, as well as frameworks like MobSF, are likely to be used by a developer focusing on mobile app security.
 
-It is a theory or technique in software development where unit tests are created (in anticipation) before the real code is developed, which is what TDD is.
 
-There has been a drop in the use of TDD in recent years, as fewer developers are paying attention to the need for testing.
 
-This unpopularity can be attributed to a variety of causes. According to my observations, there are few detailed tutorials on why and how to write tests in boot camps, online courses, tutorials, and other learning paths.
-
-The number of external frameworks passed by a front-end web developer determines how many integration tests will be conducted in addition to unit tests.
+The number of external frameworks used by a front-end web developer determines how many integration tests will be conducted, in addition to unit tests.
 
 API testing is a backend developer's meal of choice.
 
