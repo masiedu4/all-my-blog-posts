@@ -4,16 +4,15 @@ Concepts like "test-first" programming emerged in the late 1990s.
 
 Kent Beck, the software engineer who is credited with rediscovering the technique, did not make the claim that Test-Driven Development (TDD) supports simple designs and inspires confidence until 2003.
 
-It is a theory or technique in software development where unit tests are created (in anticipation) before the real code is developed, which is what TDD is.
+TDD is a theory or technique in software development where unit tests are created (in anticipation) before the real code is developed.
 
 There has been a drop in the use of TDD in recent years, as fewer developers are paying attention to the need for testing.
 
-This unpopularity can be attributed to a variety of causes. According to my observations, there are few detailed tutorials on why and how to write tests in boot camps, online courses, tutorials, and other learning paths.
-
+This unpopularity can be attributed to a variety of causes. 
+According to my observations, there are few detailed tutorials on why and how to write tests in boot camps, online courses, tutorials, and other learning paths.
 
 
 There is also the claim that writing successful tests is much more time-consuming than writing the implementation code.
-
 
 As a general rule, most people are taught that testing is a one-way street. 
 
@@ -30,7 +29,7 @@ API testing is a backend developer's meal of choice.
 What follows is a discussion of unit testing in its entirety.
 
 
-### Unit testing fundamentals
+## Unit testing fundamentals
 
 In many ways, unit testing may be seen as the foundation of all other types of testing. Here, specific software modules or pieces are put through their paces. Sections of code are separated and thoroughly tested.
 
@@ -51,10 +50,10 @@ This is the goal of TDD: to make software that is constantly changed and reevalu
 In accordance with TTD practice, developers begin by writing unit tests that fail. This process continues until the unit passes and performs as expected.
 
 
-### For what purposes should we create and maintain unit tests?
+> For what purposes should we create and maintain unit tests?
 
 
- #### 1. Easy debugging 
+ ### 1. Easy debugging 
 
 Using the test, we can figure out what went wrong, where it happened, and what we can do about it if our application ever crashes.
 
@@ -62,25 +61,24 @@ When all the tests pass, it's easy to deduce that the fault isn't with the funct
 
 Additionally, unit testing increases the code's quality. Its goal is to find all possible bugs before the code is put through further integration testing. 
  
-#### 2. Smooth and Fast Testing Experience 
+### 2. Smooth and Fast Testing Experience 
 
-Because of the modular nature of unit testing, parts of the project can be accomplished even if the entire application has not yet been set up or finished. As a result of this and other factors, we are able to complete a job more quickly.
+Because of the modular nature of unit testing, parts of the tests can be written even if the entire application has not yet been set up or finished. 
 
-#### 3. Refactors can be done easily and safely
+### 3. Refactors can be done easily and safely
 
 Our tests will come to the rescue if there is a flaw and we accidentally add another semicolon to our expressions when our code is refactored.
 
 It's safe to proceed with refactoring if there are unit tests in place.
 
+> There are certain drawbacks to unit testing.
 
-### There are certain drawbacks to unit testing.
-
-#### 1. Less extensive way of testing
+### 1. Less extensive way of testing
 
 Unit testing won't catch all the bugs in a program. In our program, it is nearly impossible to examine every single execution step.
 
 
-#### 2. More test code is written
+### 2. More test code is written
 
 Think about building unit tests for a large software system that has thousands of functions and modules to unit-test!
 
@@ -122,8 +120,7 @@ A developer's comfort level should be high when it comes to the idea of eliminat
 
 Unit testing and other types of testing might be difficult for a software engineer to master, but there are many tools available to guide you through the process.
 
-I'm grateful that you've made it this far. Thank you, and I'll see you soon.
-
+I'm grateful that you read down this far. Thank you!
 
 
 
