@@ -11,24 +11,15 @@ These "coin-brokers" vanished as quickly as they appeared after I made my initia
 
 It would be easy to assume that this tragic event would be the end of my adventure as a blockchain novice, but it was just the beginning.
 
-Even though it wasn't a lot of money, the 18-year-old in me felt compelled to learn more about this new trend.
+I felt compelled to learn more about this new trend.
 
-Before I started buying coins, I looked into the market, the technology, and how they could be used, so I knew what to do.
-
-About two months down the road, a friend showed me the ropes of HTML and CSS.
-
-I can't tell you everything about my two-year journey to becoming a blockchain developer.
-
-Prior to diving into Solidity, I specialized in full-stack JavaScript development.
-
-My friends and mentors in the blockchain field stoked my desire to begin my career as a blockchain engineer.
-
-Before long, I'd learned several important things about this industry and how it works.
+With fundamental and technical experience, I have learned several important things about this industry and how it works.
 
 Let's get right down to it.
 
 
-### 1.  The blockchain ecosystem is nascent.
+## 1.  The blockchain ecosystem is nascent.
+
 In 2015, Ethereum became the first cryptocurrency to implement [smart contracts](https://blog.michaelasiedu.com/the-lifecycle-and-application-of-blockchain-smart-contracts).
 
 There are no restrictions on who can use the Ethereum platform to build long-term and immutable decentralized applications that can be accessed by anybody.
@@ -62,7 +53,7 @@ This [link](https://blog.soliditylang.org/category/releases/)will keep you updat
 
 
 
-### 2.  The top 1% know JavaScript.
+## 2.  The best know JavaScript.
 
 DApps are constructed with JavaScript and associated libraries. JavaScript is used to create a user-friendly UI for smart contract systems.
 
@@ -73,7 +64,7 @@ Using these libraries requires JavaScript knowledge.
 But JavaScript's narrative isn't over. Local smart contract development using Truffle and Hardhat uses JavaScript for configuration and testing. You may see this in action when you upload your DApp source code to Github.
 
 
-### 3.  It's a rewarding experience to learn Solidity.
+## 3.  It's a rewarding experience to learn Solidity.
 
 It was based on JavaScript, but Solidity is very different from JavaScript in terms of how it works.
 
@@ -90,7 +81,7 @@ A variable's type must be expressly declared if it is to be of the type `uint` o
 Setters are recorded as transactions in Solidity, which is an intriguing concept.
  
 
-### 4. There are a lot of better options out there, and they don't always have to be six-figure positions.
+## 4. There are a lot of better options out there, and they don't always have to be six-figure positions.
 
 "6-figure job" is a safe bet when you hear about Web 3.0 these days. In no time at all, I saw that the Web3 ecosystem had a lot of promise and offered a wide range of possibilities.
 
@@ -102,7 +93,7 @@ During the first month of my web3 courses, I received more job offers and e-mail
 
 While a six-figure salary is great, I believe there are better possibilities to juggle when you know how to create blockchain-based applications.
 
-### 5.  You're filled with confidence and a sense of purpose.
+## 5.  You're filled with confidence and a sense of purpose.
 
 Upon studying the Cryptopunks NFT code, and realizing that I was among the 1% of individuals who could perform it, I felt like I'd accomplished something significant.
 
@@ -117,8 +108,14 @@ The value and demand for blockchain engineers are likely to rise rapidly in the 
 This is the best sensation I've ever had.
 
 
-### Conclusion.
+## Conclusion.
 
-The road to becoming a blockchain developer has been long and arduous thus far. In the short time I've been working with blockchain, I can certainly state that it has been one of the most rewarding and risky decisions I've ever made.
+The road to becoming a blockchain developer has been long and arduous thus far.
 
-Thank you for staying with me so far. Thank you, and I'll see you soon.
+In the short time I've been working with blockchain, I can certainly state that it has been one of the most rewarding and risky decisions I've ever made.
+
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support.
