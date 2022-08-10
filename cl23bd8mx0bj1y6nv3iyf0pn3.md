@@ -728,10 +728,14 @@ export default function Whitelist() {
 
 ### Before you leave
 
-If your React.js is good, you'll notice that there are several best practices, such as the ContextAPI and the [useReducer hook](https://www.michaelasiedu.com/using-reacts-usereducer-hook-to-manage-complex-states), that may be used to make our code more clean and efficient.
+With futher understanding of React, you'll notice that there are several best practices, such as the Custom Hooks , ContextAPI and the [useReducer hook](https://www.michaelasiedu.com/using-reacts-usereducer-hook-to-manage-complex-states), that may be used to make our code more clean and efficient.
 
 What are some of the features that you can implement on your own?
 
 I've created [a repository for this lesson](https://github.com/masiedu4/whitelist-smart-contract-solidity-), with separate branches for the smart contract and the frontend. You can look into it.
 
-Check out more of my articles [here.](https://www.michaelasiedu.com/)
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. 
