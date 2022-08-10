@@ -8,7 +8,7 @@ Nick said it was "a collection of digitally defined promises, as well as the pro
 
 We've been implementing smart contract knowledge for a long period of time, even before the emergence of **Bitcoin and Blockchain in 2009**.
 
-### What is a Smart Contract?
+## What is a Smart Contract?
 
 The **vending machine** is a long-standing application of smart contracts.
 
@@ -35,35 +35,35 @@ The picture below shows a sample smart contract code that deals with how tokens 
 ![Sample-Smart-Contract-Code.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1640169933767/JsOW1Gqkp.jpeg)
 
 
-### Characteristics of Blockchain Smart Contracts.
+## Characteristics of Blockchain Smart Contracts.
 What are the characteristics, ramifications of a smart contract?
 
-#### - Smart Contracts are computer programs 
+###  1. Smart Contracts are computer programs 
 
 Smart contracts are nothing more than computer programs.
 Smart contracts are neither especially intelligent nor accurate representations of legal contracts.
 
 
-#### - Smart Contracts are immutable 
+### 2. Smart Contracts are immutable 
 
 Once deployed and added to the ledger, a smart contract's code is immutable. In contrast to traditional software, the only way to modify a smart contract is to re-deploy it.
 
-#### - Smart Contracts have deterministic effects 
+### 3. Smart Contracts have deterministic effects 
 
 The conclusion of a smart contract's execution is identical for everyone who runs it.
 
-#### - Economic Aspects of Smart Contracts 
+### 4. Economic Impact of Smart Contracts 
 
 They promise increased openness, a reduction in the number of intermediaries, and a reduction in transaction costs.
 
 
-#### - Technical Aspects of Smart Contracts
+### 5. Technical Properties of Smart Contracts
 
 They are tamper-resistant(immutable), self-enforcing, and self-verifiable.
 
 
 
-### Life Cycle of Smart Contracts 
+## Life Cycle of Smart Contracts 
 
 Typically, smart contracts are constructed in a high-level programming language.
 
@@ -73,15 +73,15 @@ Following compilation, the platform executes the bytecode, which initiates a spe
 
 It can communicate with other smart contracts and externally owned accounts (EOA). Each smart contract has a unique address that can be used to do this.
 
-In contrast to EOAs, smart contracts are not secured by a key. On a fundamental level, developers of smart contracts do not have any unique privileges, even though they can be written to their advantage, because there are no keys, they can be interacted with by anybody.
+In contrast to EOAs, smart contracts are not secured by a key. On a fundamental level, developers of smart contracts do not have any unique privileges( even though they can be written to their advantage) because there are no keys, they can be interacted with by anybody.
 
-It is critical to understand that contracts are executed and referred to as transactions. Wallet accounts (EOAs) and other smart contracts can communicate with one another and send transactions to one another.
+It is vital to understand that contracts are executed and referred to as transactions. Wallet accounts (EOAs) and other smart contracts can communicate with one another and send transactions to one another.
 
 In the event of an execution fault, all state changes are "restored," but the ether spent on fees is withdrawn from the account that began the transaction.
 
 
 
-#### Altering Smart Contracts 
+## Altering Smart Contracts 
 
 Once deployed, a smart contract's code is irreversible. This emphasizes the critical need to extensively test the code prior to deployment.
 
@@ -99,7 +99,7 @@ All of this data and code are added during production and deployment, as there i
  
 
 
-### Industrial Use Cases of Smart Contracts 
+## Industrial Use Cases of Smart Contracts 
 
 Smart contracts have a variety of industrial applications ranging from simple to sophisticated. I'll discuss the ones that are rapidly evolving these days.
 
@@ -124,11 +124,12 @@ Smart contracts have the potential to establish purpose-driven ecosystems in the
 
 
 
-### Conclusion  
+## Conclusion  
 
-The notion of a smart contract is very new, and I anticipate that over the next few years, we will witness an exponential increase in the number of smart contract applications across a variety of industries, including the legal system, banking, health, and real estate.
+The notion of a smart contract is new, and I anticipate that over the next few years, we will witness an exponential increase in the number of smart contract applications across a variety of industries, including the legal system, banking, health, and real estate.
 
-As of this writing, the blockchain business is worth $2 trillion, and a wave is on its way that will expand the use of smart contracts in all aspects of our basic and daily life.
+## Learn More
 
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
 
-I'm pleased and appreciative that you've read this far. I appreciate your time and look forward to bringing you more articles soon.
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. 
