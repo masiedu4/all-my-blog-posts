@@ -27,7 +27,7 @@ Web3 has a broader scope, and blockchain is built on top of it to provide scalab
 
 Before we get into how blockchain will disrupt numerous industries, let's take a quick stroll through what blockchain is and how it works. Let's go ahead and do it.
 
-### A Layman's Guide to Blockchain Technology
+## A Layman's Guide to Blockchain Technology
 
 Specifically, blockchain is a type of database that differs from a traditional database in the manner in which it saves information.
 
@@ -36,7 +36,7 @@ It contains information in the form of blocks that are linked together.
 As a result of blockchain technology, decentralization is achieved in the sense that no single party has the power, but instead, all users together have the power.
 
 
-### What will be the changes in the Web's structural design?
+## What will be the changes in the Web's structural design?
 
 Modern software (Web2) uses HTML, CSS, or JavaScript to render the frontend. The front-end of a webpage or a mobile application interacts with one or more centralized servers and databases on the backend
 
@@ -54,7 +54,7 @@ The wallet is in charge of managing the public-private key pair and an address, 
 
 
  
-### Blockchain and the Software Development Industry
+## Blockchain and the Software Development Industry
 
 Blockchain technology is addressing various challenges faced in the software industry.
 
@@ -77,7 +77,7 @@ Decentralization promises something spectacular from what we are used to even th
 It is no doubt that a large proportion of the internet will be decentralized, however centralized architectures have advantages and will most probably be around, at least for specific use cases.
 
 
-### The Impeccable Security Blockchain can help. 
+## The Impeccable Security Blockchain can help. 
 
 There are numerous ways in which blockchain technology addresses the concerns of security and trust. New blocks are stored in a linear and chronological fashion, and new blocks are stored in a chronological and linear fashion (always added to the end of the blockchain).
 
@@ -87,12 +87,12 @@ This is why cybersecurity is considered one of the most potential areas for the 
 
 Businesses of all sizes will confront ever-increasing problems as a result of the threat of data hacking, which will only become worse. Blockchain technology has the potential to protect against such attacks.
 
-### Conclusion
-
+## Conclusion
 
 It should be highlighted, however, that Web3.0 is a very fluid idea that is expected to evolve at an alarming rate over the next years.
 
 Today, the majority of notions are predefined, and many things are on the verge of change.
+
 As such, anyone interested in entering the blockchain must be hardwired to constantly reinvent themselves in order to remain relevant.
 
 The following is a list of excellent books that will assist you in getting started with blockchain and smart contract creation.
@@ -104,6 +104,12 @@ The following is a list of excellent books that will assist you in getting start
 - Mastering Ethereum Building Smart Contracts and DApps by Andreas M. Antonopoulos, Gavin Wood Ph. D. 
 
 - How to Defi by CoinGecko Lau, Darren Lau, Daryl The, Sze Jin Kho, Kristian Azmi, Erina Lee, TM Ong, Bobby 
+
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. 
 
 
 
