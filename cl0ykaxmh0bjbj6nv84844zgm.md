@@ -4,21 +4,21 @@ The blockchain has the potential to create the most wealth in human history.
 
 In addition to helping the disadvantaged and the less powerful, technology has the potential to benefit everyone.
 
-Many people have made more money in a few hours by sitting at a computer and making the right or wrong selections, whether it's with [NFTs](https://www.michaelasiedu.com/nfts-greater-physical-art-why-digital-art-will-completely-disrupt-physical-art), DeFi, DAOs, or cryptocurrency trading.
+Many people have made more money in a few hours by sitting at a computer and making the right or wrong selections, whether it's with [NFTs](https://www.michaelasiedu.com/nfts-greater-physical-art-why-digital-art-will-completely-disrupt-physical-art), Defi, DAOs, or cryptocurrency trading.
 
-When working with the blockchain, all you need is an internet connection and some money you're prepared to risk in order to make money, such as by flipping jpegs of monkeys or supplying liquidity to a decentralized exchange.
+When working with the blockchain, all you need is an understanding of the industry, and some money you're prepared to risk in order to make money.
 
 However, dealing with the blockchain is not completely risk-free since there are both purposeful and inadvertent bad actors attempting to exploit the technology's infancy and the inexperience of its users.
 
-Misinformation and disregarding a specific project are two of the most prevalent reasons people lose money while dealing with blockchain. That's [something I've been a victim of, too](https://www.michaelasiedu.com/5-things-ive-learned-since-making-the-switch-to-web30).
+Misinformation and disregarding a specific project are two of the most prevalent reasons people lose money while dealing with blockchain.
 
 I've compiled **a list of the four most crucial questions** anyone interested in working with the blockchain should ask themselves in order to limit the rate at which people lose their hard-earned money due to ignorance.
 
 [Flipping NFTs](https://web3.hashnode.com/how-much-does-it-cost-to-create-an-nft), buying and hodling tokens, supplying liquidity, engaging in DeFi, joining a DAO, and other strategies can all be viable options for making money in the cryptocurrency space.
+
 This article's points are broad and can be applied to any blockchain venture you'd like to invest in.
 
-### 1. Is it a solution to your problem, and if so, how?
-
+## 1. Is it a solution to your problem, and if so, how?
 
 Because of its promise to solve problems, this technology is being used by a growing number of people.
 
@@ -37,10 +37,12 @@ Take a look at your life and see if there are any issues that the venture can he
 The ideal method is to **have a general overview of the project**, what it has previously accomplished, and what it intends to do.
 
 To give you an example, here it is: Because [Ethereum](https://www.michaelasiedu.com/getting-started-with-ethereum-blockchain-development-with-solidity) has reached Turing completeness, programmers can now create [smart contracts and Dapps](https://www.michaelasiedu.com/the-lifecycle-and-application-of-blockchain-smart-contracts).
-First and foremost, make it all about you. The next step is to explore Dapps as a viable project to invest in once you have a general idea of how they will impact your life and those around you.
+First and foremost, make it all about you. 
+
+The next step is to explore Dapps as a viable project to invest in once you have a general idea of how they will impact your life and those around you.
 
 
-### 2. What are the specifics of the project's technical details?
+## 2. What are the specifics of the project's technical details?
 
 The answer to this issue isn't going to be easy, especially if you don't have any expertise in technology.
 There are several threats to technology as it advances.
@@ -61,7 +63,7 @@ If you are a non-technical person, I recommend that you go through the trouble o
 It's difficult to create solutions for the chain, and most efforts are open to attack. Do your homework and take a deep breath. It will all pay off in the long run!
 
 
-### 3. Do you know anything about the project's history, and do you think it will hold up to scrutiny in the future?
+## 3. Do you know anything about the project's history, and do you think it will hold up to scrutiny in the future?
 
 This is my absolute favorite part.
 
@@ -85,7 +87,7 @@ Before committing your money to a project, you should be aware of and **grasp al
 
 This is a good thing to keep in mind when investing in NFT projects, the markets that go with them, and phishing attacks.
 
-### 4. Who are the product's founders, and is there a large support community behind them?
+## 4. Who are the product's founders, and is there a large support community behind them?
 
 In order to wrap up your investigation and verify all of your findings, you should ask this question.
 
@@ -107,6 +109,11 @@ As technology advances, it becomes increasingly exciting to be a part of this fa
 
 However, **the largest investment mistake you can make is to invest in something you don't understand.**
 
-I'm not a financial expert, and all of the things above are based solely on my personal experience as a victim of scams and dishonest individuals. Take it with a grain of salt and do your own investigation.
+I'm not a financial expert, and all of the things above are based solely on my personal experience and findings.
 
-Thank you for reading up to this point. For more fantastic content like this, check out my [blog](https://www.michaelasiedu.com/).
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support.
+
