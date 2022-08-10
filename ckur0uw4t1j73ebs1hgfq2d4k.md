@@ -5,12 +5,12 @@ In October 2016, Vercel and the open-source community released an "icing on the 
 
 The main goal of its first release was to improve one of the most popular JavaScript libraries on the market, React.
 
-While React is very popular, there were a lot of problems that developers had to deal with when they started using it. These problems included performance issues, routing, server-side rendering, and SEO.
+While React is very popular, there were a number of drawbacks that developers had to deal with when they started using it. These problems included performance issues, routing, server-side rendering, and SEO.
 
 Now, let's examine all of Next.js's implications for these difficulties.
 
 
-### 1. Server-Side Rendering
+## 1. Server-Side Rendering
 
 React employs the time-honored technique of client-side rendering.
 
@@ -31,7 +31,7 @@ Next.js applications are extremely quick due to the use of static sites and serv
 
 
 
-### 2. Search Engine Optimization (SEO) 
+## 2. Search Engine Optimization (SEO) 
 
 Essentially, HTML is displayed on the server when Next is used.
 It is rendered on the client-side, i.e. in the browser, with React.
@@ -60,9 +60,9 @@ export default Home
 Additionally, SEO has improved significantly in recent years, and as a result, it now favors quicker websites over slower ones.
 
 
-### 3. Easy Routing
+## 3. Easy Routing
 
-Routing in React takes some getting used to, as you must install an npm package, [React Router](https://blog.michaelasiedu.com/a-complete-beginners-guide-to-understanding-react-router), import it, and define routes and their paths.
+Routing in React takes some getting used to, as you must install an npm package, [React Router](https://michaelasiedu.com/a-complete-beginners-guide-to-understanding-react-router), import it, and define routes and their paths.
 
 Implementing dynamic and chained routes might be challenging.
 
@@ -104,9 +104,9 @@ function Navbar() {
 export default Navbar
 ``` 
 
-### Conclusion
+## Conclusion
 
-Adoption of Next. js became prevalent quickly because it solved a problem that many web developers used to have with web applications rendered on the client-side (in the browser).
+Adoption of Next. js became prevalent quickly because it provided an alternative to the drawbacks that many web developers used to have with web applications rendered on the client-side (in the browser).
 
 
 - Server-side rendering
@@ -116,6 +116,13 @@ Adoption of Next. js became prevalent quickly because it solved a problem that m
 - Improved web page performance
 
 - Better development process
+
+
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. Thank you very much.
 
 
 
