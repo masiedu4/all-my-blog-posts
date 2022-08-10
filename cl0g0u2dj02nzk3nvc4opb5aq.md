@@ -1,13 +1,13 @@
 ## Using React’s useEffect() Hook to Interact with APIs.
 
-APIs are critical for web developers to understand because they are the backbone of every fully-fledged web application, thus we must be comfortable with them.
+APIs are vital for web developers to understand because they are the backbone of every fully-fledged web application, thus we must be comfortable with them.
 
 APIs are the means by which data is retrieved from servers, contact is launched and established with other systems, and, eventually, the means by which we can write to databases and servers.
 
 This article will teach you how to collect data from an API, and more specifically, how to do it while utilizing the useEffect hook to accomplish your goal.
 
 
-### Pre-requisites
+## Pre-requisites
 
 -  It is necessary to have some prior knowledge of JavaScript and React.js in order to properly comprehend this tutorial.
 
@@ -15,7 +15,7 @@ This article will teach you how to collect data from an API, and more specifical
 
 Let's get into it.
 
- #### File Structure 
+ ### File Structure 
 
 
 ![File Structure for our project](https://cdn.hashnode.com/res/hashnode/image/upload/v1645982515819/fyVIdaUfs.png)
@@ -75,10 +75,12 @@ The code shown above has been broken down into steps.
 - The `await` keyword is used to wait for the fetching to be complete before the try-catch statement is executed.
 
 - The Promise is resolved with the `response` object from the `fetch` function
+
 The `console.log(response)` statements are only executed if the Promise is resolved successfully. Otherwise, the `console.log(error) ` is executed.
 
 
 In returning the component, we added an `onClick` event listener to the `<button>`.
+
 This means that the only way `getData()` will be called is when there's a click on the button.
 
 
@@ -86,14 +88,14 @@ This means that the only way `getData()` will be called is when there's a click 
 
 Greetings, you've successfully completed an API call and have logged the results in your console!
 
-### The React Hooks Code of Conduct
+## The React Hooks Code of Conduct
 
 It's the useEffect hook that tells the system what it should do **when it renders**. With a better understanding of how React.js hooks function, the `useEffect()` hook will have greater meaning for us.
 
 React hooks follow a set of rules that can be summarized as:
 
 
-#### 1. Use hooks only at the very top of your program. 
+### 1. Use hooks only at the very top of your program. 
 
 Keep hooks out of loops, nested functions, and conditions.  Hooks can't function properly without the correct call order. 
 
@@ -103,11 +105,11 @@ We require a consistent call sequence in React. Using loops and conditions to re
 The useEffect can be used to run a function.**
 
 
-#### 2. Don't call hooks from regular JavaScript functions
+### 2. Don't call hooks from regular JavaScript functions
 Call hooks from functional components
 
 
-### Introduction to the useEffect hook
+## Introduction to the useEffect hook
 
 In React.js, the useEffect hook serves as a lifecycle hook that can be used at any time.
 
@@ -193,10 +195,12 @@ You can inform React that your component needs to perform something after render
 
 That's the beauty of the useEffect hook!
 
-### Conclusion
+## Conclusion
 
 This is the [link to the source code](https://codesandbox.io/s/working-with-api-and-useeffect-hook-ct0enl?file=/src/App.js) of this whole tutorial. 
 
-I'm pleased that you found it interesting. For more in-depth explanations, you can follow me on [Twitter](https://twitter.com/asiedu_dev) or sign up for my [newsletter](https://www.getrevue.co/profile/michaelasiedu) where I distribute my regular learnings as mails.
+## Learn More
 
-See you soon.
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. 
