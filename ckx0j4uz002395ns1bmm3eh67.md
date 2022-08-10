@@ -1,6 +1,6 @@
 ## A Step-by-Step Guide to Understanding React Router for Complete Beginners
 
-### Introduction
+## Introduction
 
 **Routing** is used in software development to navigate between paths and pages.
 
@@ -16,7 +16,7 @@ It is assumed that you know JavaScript and React.
 
 Let's start now.
 
-### Installation and Configuration.
+## Installation and Configuration.
 
 This tutorial will be on using ```create-react-app ``` to implement the latest version of React Router(v6).
 
@@ -62,7 +62,7 @@ ReactDOM.render(
 With this simple step completed, we can use the React Router anywhere in our project! 
 
 
-### Creating routes in our app
+## Creating routes in our app
 
 
 `ROUTES`: The `Routes` component was missing in previous versions.
@@ -115,7 +115,7 @@ export default function App() {
 
 
 
-**Now we can write routes, what happens when a user visits a route we have not defined in our code?**
+> Now we can write routes, what happens when a user visits a route we have not defined in our code?
 
  
 We can create a custom component(page) where we can redirect all invalid route requests to.
@@ -146,17 +146,18 @@ export default function App() {
 ``` 
 
  NB: 
-** 1. "Error" routings always have to be the last route at the bottom before the closing tag ```</Routes>```.**
+> 1. "Error" routings always have to be the last route at the bottom before the closing tag ```</Routes>```.**
 
- **2. The ```path``` value is given as an ```*``` with the ``` element``` value set to the corresponding error page.  ** 
+ > 2. The ``` path``` value is given as an ```*``` with the ``` element``` value set to the corresponding error page.  ** 
 
-**3. The user will be redirected to the Error page whenever they visit a wrong route.**
+> 3. The user will be redirected to the Error page whenever they visit a wrong route.**
 
-** Refer from code above.**
+** Refer to code above.**
 
 
 
 ``` LINK ```:  We can successfully create a route but how can we link JSX elements to pages? 
+
 Let's say we have an item on the Navigation bar and upon click, we want the user to be directed to its corresponding page, how do we implement that? 
 
 That's where the ```<Link>``` from our ```react-router-dom``` comes in. 
@@ -184,7 +185,7 @@ export default function Navbar() {
 
 
 
-#### Handling Redirects in React Router 
+## Handling Redirects in React Router 
 
 Handling redirects is a key element of the "routing" process. When you want to keep an existing link but redirect all of the traffic that comes from that link to a different URL, you use redirects.
 
@@ -213,7 +214,7 @@ In this case, all routing requests to ```/products``` will be redirected to ```/
 
 
 
-#### The useParams() Hook 
+### The useParams() Hook 
 
  React Router comes with a ```useParams()``` hook that allows us to access the current URL params wherever you need them, especially when making API requests to a server.
 
@@ -232,10 +233,15 @@ function App() {
 ```
 
 
-### Conclusion 
+## Conclusion 
 
 React Router is really straightforward to utilize in our applications, and [the documentation](https://reactrouter.com/docs/en/v6) provides an in-depth explanation of the framework.
 
 I have a strong belief that you will be able to easily construct and use React Router in your projects after reading this article.
 
-Thank you for taking the time to read this. I'll see you soon!
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. Thank you very much.
+
