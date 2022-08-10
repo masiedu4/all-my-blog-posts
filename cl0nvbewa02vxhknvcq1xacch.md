@@ -16,7 +16,7 @@ In order to employ clean code, there are no unnecessary repetitions. And using *
 
 In this article, we'll take a deep dive into the useReducer hook and how it can be used to write clean code for handling complex states. 
 
-### Pre-requisites
+## Pre-requisites
 
 -  It is necessary to have some prior knowledge of JavaScript and React.js in order to properly comprehend this tutorial.
 
@@ -24,14 +24,14 @@ In this article, we'll take a deep dive into the useReducer hook and how it can 
 
 Let's get into it.
 
- #### File Structure 
+ ### File Structure 
 
 
 ![File Structure of the Tutorial](https://cdn.hashnode.com/res/hashnode/image/upload/v1647052839997/IFch4zl3D.png)
 
 The `App.js` file will include all of the code involved in working with the **useReducer hook.** This is done for the purpose of simplicity and readability. You have complete control over how yours is structured.
 
-### Using the useState hook to manage multiple states 
+## Using the useState hook to manage multiple states 
 
 State variables can be used in functional components thanks to useState, a hook in the framework. If the starting state is sent to this method, the function returns a variable with the current state value and a function that can be used to update this value.
 
@@ -67,7 +67,7 @@ export default function App() {
 ![Set to 2022 , event listener](https://cdn.hashnode.com/res/hashnode/image/upload/v1647053724117/4nVlpNER8.png)
 
 
-#### Multiple and complex states
+### Multiple and complex states
 
 
 ```
@@ -105,7 +105,7 @@ Because there are 10 possible states, we'd have to run useState ten times to kee
 
 useReducer solves this issue!
 
-### Introduction the useReducer hook 
+## Introduction the useReducer hook 
 
 The useReducer hook is an inbuilt hook that is often overlooked as most people do not know when and how to use this hook.
 
@@ -127,7 +127,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
 - useReducer takes 2 arguments: **a reducer function** that manages what happens when the `dispatch` function is called, and the `initialState` which is the value with which the state is initialized.
 
 
-#### The reducer function
+### The reducer function
 
 When you wish to change your state, the **dispatch** is called, and the **reducer** function takes care of that.
  
@@ -268,7 +268,7 @@ export default function App() {
 ![Greetings state set to true](https://cdn.hashnode.com/res/hashnode/image/upload/v1647089610089/L1kRJGGzL.png)
 
 
-### Conclusion
+## Conclusion
 
 Using **React's useReducer() hook**, you can decouple state management from component rendering code.
 
@@ -282,4 +282,8 @@ After that, the action object is sent on to the `reducer()` function, which perf
 
 **Source code for the tutorial [here](https://codesandbox.io/s/working-with-the-usereducer-hook-oggti?file=/src/App.js)**
 
-If you liked what you read here, you can find more of my work by clicking [here](https://blog.michaelasiedu.com/). I appreciate the effort!
+## Learn More
+
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. 
