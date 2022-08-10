@@ -1,6 +1,6 @@
 ## JavaScript's scopes and closures have been explained!
 
-Understanding JavaScript's Closures is essential to our development process. However, even the most basic of closures can prove difficult to comprehend.
+Understanding JavaScript's Closures is essential to our development journey. However, even the basics of closures can prove difficult to comprehend.
 
 An inner function can access the scope of an outer function through a closure.
 
@@ -20,7 +20,7 @@ Let’s write some basic code using variables and functions that will make sense
 
 JavaScript variables can belong to the local or global scope.
 
-####  LOCAL VARIABLES.
+##  Local Variables
 
 A function can access all variables defined inside the function. 
 
@@ -49,7 +49,7 @@ function localScope() {
 
 ``` 
 
-#### GLOBAL VARIABLES
+## Global Variables
 
 A function can also access variables defined outside the function.
 
@@ -67,7 +67,7 @@ Contrary to a local variable that can only be used inside the function where it 
 
 Local variables are hidden from other functions and other scripting codes except for their parent function.
 
-#### LEXICAL SCOPING
+## Lexical Scoping
 
 Let’s take a look at the code below. 
 
@@ -100,10 +100,12 @@ It must be noted, inner functions have access to the variables of outer function
 Lexical scope means that in a nested group of functions, the inner functions have access to the variables and other resources of their parent scope.
 
 
-#### Conclusion 
+## Conclusion 
 
 It's critical to grasp the ideas of scopes and closures because they have numerous applications in the world of software development.
 
-If you're interested in more sophisticated applications, I'll be writing more articles on scopes and closures in the future.
+## Learn More
 
-Until we meet again, thanks!
+This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
+
+Check out [the blog](https://www.michaelasiedu.com/) to show your support. Thank you very much.
