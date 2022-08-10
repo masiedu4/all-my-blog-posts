@@ -103,7 +103,7 @@ Connect with others via Reddit discussion boards or Discord chatrooms. You'll le
 ![Ethereum Discord Community](https://cdn.hashnode.com/res/hashnode/image/upload/v1647735636733/EI78StMBv.png)
 
 
-### Conclusion
+## Conclusion
 
 As technology advances, it becomes increasingly exciting to be a part of this fascinating era.
 
