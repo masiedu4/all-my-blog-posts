@@ -11,7 +11,7 @@ You have no idea what is going on with the codebase because it is hidden and ina
 
 However, in the case of **open-source software**, this is not the case in any way, shape, or form.
 
-For the purposes of this definition, "open source" refers to something that individuals can alter and share since its architecture is publicly accessible to everyone under the terms of a licensing agreement.
+**"Open source"** refers to something that individuals can alter and share since its architecture is publicly accessible to everyone under the terms of a licensing agreement.
 
 Let's get down to business. Let's go ahead and do it.
 
