@@ -2,14 +2,14 @@
 
 When you are experiencing difficulties while utilizing a centralized software system, the first thing you do is contact a team or the corporation to report your issue and get assistance.
 
-In the majority of cases, what they do is transmit your complaint to their internal engineering team, who then write some code to resolve the issue for you.
+In most cases, they transmit your complaint to their internal engineering team, who then write some code to resolve the issue for you.
 
 
 ![app-crashing.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1635686352712/g51VdXWtB.jpeg)
 
-You have no idea what is going on with the codebase because it is hidden and inaccessible to you. Your major interest is the output, which is the answer to the problem you are currently dealing with.
+You have no idea what is going on with the codebase because it is hidden and inaccessible to you. Your primary interest is the output, which is the answer to the problem you are currently dealing with.
 
-However, in the case of **open-source software**, this is not the case in any way, shape, or form.
+However, with **open-source software**, this is not the case in any way, shape, or form.
 
 **"Open source"** refers to something that individuals can alter and share since its architecture is publicly accessible to everyone under the terms of a licensing agreement.
 
