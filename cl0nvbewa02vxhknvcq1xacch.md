@@ -101,7 +101,7 @@ export default function App() {
 
 However, this is not a viable option.
 
-Because there are 10 possible states, we'd have to run useState ten times to keep track of them all.
+Because if there are 10 possible states, we'd have to run useState ten times to keep track of them all.
 
 useReducer solves this issue!
 
@@ -111,7 +111,7 @@ The useReducer hook is an inbuilt hook that is often overlooked as most people d
 
 It's a powerful alternative to the useState hook if you know how to use it effectively. The useReducer hook can be used to alter all of your React app's states at once while decreasing redundancy. 
 
-useReducer() is well-suited for state updates that are moderately complex (requiring at least 2-3 update actions). useState() is all you need for basic state management.
+**useReducer()** is well-suited for state updates that are moderately complex (requiring at least 2-3 update actions). useState() is all you need for basic state management.
 
 #### Anatomy of the useReducer hook
 
@@ -178,14 +178,18 @@ const reducer = (state, action) => {
 };
 
 export default function App() {
+
   const [state, dispatch] = useReducer(reducer, { count: 2021 });
+
+ // When the button is clicked, count is increased...
+ // ...and changed to 2022
 
   return (
     <div className="App">
       <p> {state.count} </p>
       <button
         onClick={() => {
-          // When the button is clicked, count is increased is changed to 2022
+ 
           dispatch({ type: "INCREMENT" });
         }}
       >
@@ -204,7 +208,8 @@ export default function App() {
 Simply by adding another action type to our reducer and dispatching it as needed, we can simply add an additional state change. The path is the same as what we saw earlier.
 
 
-```
+```javascript
+
 import { useReducer } from "react";
 
 const reducer = (state, action) => {
@@ -226,7 +231,9 @@ const reducer = (state, action) => {
 };
 
 export default function App() {
-  // we've added another state and set the initial value  as `true`
+ // we've added another state and set the initial value  as `true`
+ // When the button is clicked, the count is increased
+// and the value for showGreetings boolean is also reversed 
   const [state, dispatch] = useReducer(reducer, { count: 2021 , showGreetings:true});
 
   return (
@@ -234,8 +241,7 @@ export default function App() {
       <p> {state.count} </p>
       <button
         onClick={() => {
-          // When the button is clicked, count is increased is changed to 2022
-          // and the value for showGreetings boolean is also reversed 
+
           dispatch({ type: "INCREMENT" });
           dispatch({type:"toggleGreetings"});
           
