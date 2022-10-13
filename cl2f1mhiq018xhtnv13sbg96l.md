@@ -131,7 +131,7 @@ contract Optimize {
 
 
 
-### 4.  Do not iterate over a dynamic range of data.
+### 4. Avoid iterating over a dynamic range of data
 
 Do not iterate over a set of figures that is supposed to change (increase) over time. In other words, avoid using loops for non-fixed data ranges that are set to grow over time.
 
@@ -178,7 +178,7 @@ contract Looping {
 Work your way through your code, looking for places where you can reduce looping through dynamic data.
 
 
-### 5. Use literal values rather than computed ones.
+### 5. Use literal values over computed values.
 
 Solidity includes built-in cryptographic functions for computing hashes.
 
