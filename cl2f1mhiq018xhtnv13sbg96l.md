@@ -1,4 +1,4 @@
-## 7 Gas Optimization Techniques to Reduce the Cost of Your Smart Contracts.
+# 7 Gas Optimization Techniques to Reduce the Cost of Your Smart Contracts.
 
 Blockchain technology may be the best and most significant thing to happen to humanity since the internet's inception.
 
@@ -41,13 +41,13 @@ In the following paragraphs, we'll get technical and look at the techniques and 
 
 ### 1. Minimize on-chain data
 
-One common misconception about building blockchain apps, in my opinion, is that every detail should be on the chain.
+One common misconception about building blockchain apps is that every detail should be on the chain.
 
-The blockchain should be viewed as a platform that aims to improve upon the shortcomings of the current centralized model rather than as a complete replacement.
+The blockchain should be viewed as a platform that aims to improve upon the shortcomings of the current centralized model (Web2) rather than as a complete replacement.
 
 Blockchain will only take over, or at the very least "solve problems," if it is used in conjunction with centralized systems.
 
-As a result, developers and project managers must be familiar with their products and what they entail. This is a critical step in determining the overall software architecture of the product.
+As a result, developers and project managers must be familiar with their products and what they entail. This is a vital step in determining the overall software architecture of the product.
 
 Some problems are better solved with a centralized system, while others are better solved with a decentralized one.
 
@@ -57,7 +57,7 @@ When it comes to building on the blockchain, the first rule is to keep the impor
 
 Create a mutually beneficial relationship between the use of decentralized and centralized systems.
 
-Simply doing so will save you a lot of money and gas.
+Simply doing so will save you a lot of money.
 
 
 ### 2. Use Deployed Libraries
@@ -225,10 +225,6 @@ It has many features, the most notable of which is **a gas reporter**. It displa
 Get it [here](https://www.npmjs.com/package/eth-gas-reporter).
 
 
-## Learn More
+## Conclusion
 
-Thank you for taking the time to read this!
-
-I write about JavaScript, Solidity, and Blockchain technology.
-
-More of my articles can be found [here](https://www.michaelasiedu.com/).
+The best blockchain engineer is one who can create low-cost applications. Go save some gas.
