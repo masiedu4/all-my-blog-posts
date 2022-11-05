@@ -1,4 +1,4 @@
-## Making Your First Open Source Contribution: A Beginner's Guide
+# How to Make Your First Open Source Contribution: A Beginner's Guide
 
 Joining a community of talented software developers is one of the best ways to unlock your potential and push yourself as a developer.
 
