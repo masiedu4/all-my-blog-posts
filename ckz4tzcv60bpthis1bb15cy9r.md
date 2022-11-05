@@ -1,4 +1,4 @@
-## Becoming a member of the elite 1% of modern software development.
+# 5 Tips to Make You a 1%er Software Developer
 
 ### Introduction
 
