@@ -160,10 +160,36 @@ We will use the `stateFromHTML` to achieve this
     const htmlVersion = response.data;
 
     const textVersion = stateFromHTML(htmlVersion); // converted version
+
+    // update editorstate with converted version
+    const  newState = EditorState.createWithContent(textVersion); 
   };
 ```
 
-### Conclusion
+## Fixing the refocus error
+
+One significant error with this configuration is that the cursor loses focus unnecessarily and frequently. Let's do a quick fix now. We will move the cursor to the end of the text before updating the editor state.
+
+  
+Add the `moveFocusToEnd` function to the editor state changes.
+
+```javascript
+const fetchFromDataBase = async () => {
+    // fetch from database using axios or fetchAPI
+    const response = axios.get("url");
+
+    const htmlVersion = response.data;
+
+    const editorContent = stateFromHTML(htmlVersion); // convert to text
+    const newState = EditorState.createWithContent(editorContent); 
+    const moveFocusState = EditorState.moveFocusToEnd(newState); // move cursor
+
+    setEditorState(moveFocusState); // update state
+    
+  };
+```
+
+## Conclusion
 
 Throughout the article, we covered the installation and setup of the necessary dependencies, demonstrated how to dynamically load the React-Draft-Wysiwyg component, and showcased the implementation of a basic editor with state management. Additionally, we discussed how to handle content changes and provided an outline for serialization.
 
