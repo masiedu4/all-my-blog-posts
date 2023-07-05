@@ -1,105 +1,95 @@
-## Build and deploy an NFT Whitelist App with React and Solidity | Step-by-Step Tutorial.
+---
+title: "Build and deploy an NFT Whitelist App with React and Solidity | Step-by-Step Tutorial."
+seoTitle: "Build and deploy an NFT Whitelist App with React and Solidity."
+seoDescription: "This is an NFT whitelisting use case. Learn how to interact with a deployed Solidity smart contract using React.js and ethers.js"
+datePublished: Sun Apr 17 2022 13:18:22 GMT+0000 (Coordinated Universal Time)
+cuid: cl23bd8mx0bj1y6nv3iyf0pn3
+slug: build-and-deploy-an-nft-whitelist-app-with-react-and-solidity-or-step-by-step-tutorial
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1649981871955/OtDaF30Kf.png
+tags: reactjs, blockchain, ethereum, solidity, nft
 
-Working on the technical components of [NFTs](https://www.michaelasiedu.com/nfts-greater-physical-art-why-digital-art-will-completely-disrupt-physical-art) might result in a plethora of features that must be implemented, and these capabilities are coded into the smart contract and the project's minting/roadmap website.
+---
 
-Consider starting an NFT and granting exclusive access to specific art or incentives through a limited whitelist. You can create your whitelist using the smart contract. The website then allows users to connect with and join the **Whitelist Smart Contract.**
+Consider creating an NFT project and granting exclusive access to early signups through a limited whitelist. You can create your whitelist using the smart contract. The website then allows users to connect with and join the **Whitelist Smart Contract**
 
-Essentially, a DApp in which users can communicate with the smart contract via the frontend.
-
-This project demonstrates a basic whitelisting use case. 
+This project demonstrates a basic whitelisting use case.
 
 ## Introduction.
 
 In this post, we will create a full-fledged DApp that will be deployed on Ethereum.
 
-Solidity is our smart contract's tech stack, Alchemy is our RPC, and Hardhat is our local development environment.
+We will write the smart contract code in **Solidity**, **Alchemy** will be our RPC, and **Hardhat**, our local development environment.
 
-To handle all of our blockchain interaction functionality, we will use React.js and ethers.js on the front end.
-
+For users to interact with the smart contract, our UI will be built with React.js and ethers.js.
 
 ## Pre-requisites.
 
-All that is necessary is a basic knowledge of the Solidity programming language and an intermediate grasp of React.js.
+All that is necessary is a basic knowledge of the Solidity programming language and React.js.
 
 ## Let's build something.
 
-The plan is to construct and deploy the smart contract first, and then the frontend subsequently.
+The plan is to build and deploy the smart contract first, and then the front end subsequently.
 
 In the following lines, we will set up our [Hardhat](https://hardhat.org/getting-started/) environment and then write some Solidity code.
 
-Finally, we will fund our wallet with test tokens and launch our contract on the testnet!
+Finally, we will fund our wallet with test tokens and deploy on a testnet!
 
-We'll go ahead and receive our contract address and contract abi. It will act as a route of communication with the blockchain contract.
-
-Let's get our hands a little muddy.
+Our deployed contract address and contract abi will be the layer of communication between the UI and the smart contract.
 
 ## Setting up our environment
 
-We will **construct** and **deploy **our smart contract locally using the Hardhat environment.
+Hardhat configuration
 
-- Make a folder for your smart contract in the root or anywhere you want it.
+* Create a folder for your smart contract on your computer.
+    
+* `cd` into the root folder and run the following commands.
+    
 
-- To configure the environment, `cd` into the root folder and run the following commands.
-
-
-```
+```javascript
 // in this order, run these commands
 
 npm init --yes
 npm install --save-dev hardhat
 npx hardhat
+```
 
-``` 
+Once you run, you will be given a few prompts to set up.
 
-Once you run `npx hardhat`, you will be given a few configurations to set up.
+* **Select** Create a basic sample project
+    
+* **Press enter** for the already specified Hardhat Project root
+    
+* **Press enter** for the question if you want to add a `.gitignore`
+    
 
-- **Select** Create a basic sample project
-
-- **Press enter** for the already specified Hardhat Project root
-
-- **Press enter** for the question if you want to add a `.gitignore`
-
-Complete the hardhat installation by installing these packages. 
+Complete the hardhat installation by installing these packages.
 
 Copy and paste this into your terminal
 
-```
+```javascript
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
-
-``` 
+```
 
 That's it! We can start writing some code.
-
 
 ## The Whitelist Smart Contract
 
 After installing Hardhat and the other required dependencies, we can see that the `contracts`, `scripts`, and `test` folders include the `Greeting.sol` sample smart contract, as well as its deploy and test scripts.
 
-Make sure all of these folders are empty because we will be creating a fresh smart contract from start!
+Make sure all of these folders are empty because we will be creating a fresh smart contract from the start!
 
+**Create a new file in the** `contracts` folder and name it `Whitelist.sol`
 
-**Create a new file in the `contracts` folder and name it `Whitelist.sol`**
+* The contract will include a `uint public maxWhitelistedAddresses` that represents the maximum number of accounts that can be on our whitelist. No one can join the whitelist if this number is achieved. We will set the value for this entity with a **constructor** function when we are deploying.
+    
+* The contract will include a `uint public numAddressesWhitelisted` that represents the current number of accounts we already have on our whitelist. Upon deployment, the value for this value will be **zero** and it will be increased until the maximum is reached.
+    
+* The contract will include a `mapping(address => bool) public whitelistedAddresses`. This logic sets a particular address to `true` immediately it joins the whitelist. It will also be used to ensure that, no account can join the whitelist twice!
+    
+* Moreover, we will have a `constructor` function which will be used to set the value of the maximum accounts that can join the whitelist i.e `maxWhitelistedAddress`. The value will be set upon deployment.
+    
 
-
-- The contract will include a `uint public maxWhitelistedAddresses` that represents the maximum number of accounts that can be on our whitelist. 
-No one can join the whitelist if this number is achieved. We will set the value for this entity with a **constructor** function when we are deploying.
-
-
--  The contract will include a `uint public numAddressesWhitelisted` that represents the current number of accounts we already have on our whitelist. Upon deployment, the value for this value will be **zero** and it will be increased until the maximum is reached. 
-
-- The contract will include a `mapping(address => bool) public whitelistedAddresses`. This logic sets a particular address to `true` immediately it joins the whitelist. It will also be used to ensure that, no account can join the whitelist twice! 
-
-
-- Moreover, we will have a `constructor` function which will be used to set the value of the maximum accounts that can join the whitelist i.e `maxWhitelistedAddress`.
-The value will be set upon deployment. 
-
-
-
-
-
-
-
-```
+```javascript
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
@@ -125,14 +115,13 @@ contract Whitelist {
 
  
 }
-``` 
+```
 
 Now that we have all **our types**, **a mapping**, and **a constructor**, we need to complete this contract by adding the most important function `addAddressToWhitelist()`.
 
 This function will be called when the user wants to join the whitelist.
 
-
-```
+```javascript
 function addAddressToWhitelist() public {
   // ensures that the caller of the function is not already part of the whitelist. 
   require(!whitelistedAddresses[msg.sender], "Sender has already been whitelisted");
@@ -147,13 +136,11 @@ function addAddressToWhitelist() public {
     // This will increase the number of whitelisted addresses
     numAddressesWhitelisted += 1;
 }
-
-``` 
+```
 
 ### Putting our entire contract together
 
-
-```
+```javascript
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
@@ -194,15 +181,13 @@ contract Whitelist {
   }
 
  }
-``` 
+```
 
 ## Configuring the deploy script
 
-In the `scripts` folder, create a `deploy.js` file. It is within this file that we will have all our deployment logic and set values constructors.
+In the `scripts` folder, create a `deploy.js` file. It is within this file that we will have all our deployment logic and set our value constructors.
 
-
-
-```
+```javascript
 const { ethers } = require("hardhat");
 
 async function main() {
@@ -233,9 +218,7 @@ main()
     console.error(error);
     process.exit(1);
   });
-
-``` 
-
+```
 
 ## Funding our wallet and getting our RPC.
 
@@ -243,86 +226,72 @@ main()
 
 To launch our smart contract, we will fund our [Metamask wallet](https://metamask.io/) with some testnet (fake) coins for development reasons.
 
+* Visit [this link](https://faucets.chain.link/rinkeby) to fund your wallet with some fake ETH
+    
 
-- Visit [this link](https://faucets.chain.link/rinkeby) to fund your wallet with some fake ETH
+![Rinkeby Testnet Faucets](https://cdn.hashnode.com/res/hashnode/image/upload/v1650130062498/KUDzClQEF.png align="left")
 
+* Before making the request, launch Metamask and switch to **the Rinkeby test network.**
+    
 
-![Rinkeby Testnet Faucets](https://cdn.hashnode.com/res/hashnode/image/upload/v1650130062498/KUDzClQEF.png)
-
-- Before making the request, launch Metamask and switch to **the Rinkeby test network.**
-
-
-![Metamask funded succesfully](https://cdn.hashnode.com/res/hashnode/image/upload/v1650130147381/QsYc5kCxO.png)
-
+![Metamask funded succesfully](https://cdn.hashnode.com/res/hashnode/image/upload/v1650130147381/QsYc5kCxO.png align="left")
 
 #### Getting our RPC
 
 [Alchemy](https://auth.alchemyapi.io/) is a blockchain API service that will allow us to easily deploy our smart contract!
 
-
-![Alchemy Authentication](https://cdn.hashnode.com/res/hashnode/image/upload/v1650130740200/8a8exKiOy.png)
+![Alchemy Authentication](https://cdn.hashnode.com/res/hashnode/image/upload/v1650130740200/8a8exKiOy.png align="left")
 
 [Sign up](https://auth.alchemyapi.io/), and then let's go over to create our app and acquire our API keys.
 
+* After successful signup, **create an app** from the dashboard.
+    
 
+![Alchemy Create App Dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131015820/Yw3DKGQjx.png align="left")
 
-- After successful signup, **create an app** from the dashboard.
+* Fill in some pertinent data to finish your app setup. Select **Ethereum** and the **RInkeby Test Network**.
+    
 
-![Alchemy Create App Dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131015820/Yw3DKGQjx.png)
+![Alchemy project setup](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131222002/P5WesMcIm.png align="left")
 
+* **View details** of your app and **copy your HTTP endpoint**. We will use this endpoint for the deployment of the contract soon.
+    
 
-- Fill in some pertinent data to finish your app setup. Select **Ethereum** and the **RInkeby Test Network**.
-
-
-![Alchemy project setup](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131222002/P5WesMcIm.png)
-
-
-
-- **View details** of your app and **copy your HTTP endpoint**. We will use this endpoint for the deployment of the contract soon.
-
-
-![Deployment Endpoint](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131412850/iD5OztcBo.png)
+![Deployment Endpoint](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131412850/iD5OztcBo.png align="left")
 
 ### Let's finish the deployment
 
-
-- Create a **`.env`** file in the root of your smart contract folder. This file will contain your Alchemy HTTP endpoint as well as your Rinkeby Private Key.
+* Create a `.env` file in the root of your smart contract folder. This file will contain your Alchemy HTTP endpoint as well as your Rinkeby Private Key.
+    
 
 Switch to the Rinkeby test network in Metamask and copy the private key.
 
+![Metamask Private Key](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131961123/S46JtQOqg.png align="left")
 
-![Metamask Private Key](https://cdn.hashnode.com/res/hashnode/image/upload/v1650131961123/S46JtQOqg.png)
+* **In your .env file:**
+    
 
-
-
-- **In your .env file:**
-
-```
+```javascript
 API_KEY="add-your-alchemy-endpoint-url-here"
 
 PRIVATE_KEY="add-your-rinkeby-private-key-here"
-
-``` 
-
-
-- To be able to import our keys into our final config file, we need an npm package called **dotenv** .
-
-
 ```
+
+* To be able to import our keys into our final config file, we need an npm package called **dotenv** .
+    
+
+```javascript
 npm install dotenv
-
-``` 
-
+```
 
 ### Final config before deployment
 
-
-- Navigate to the **hardhat.config.js** file. This file will be used to configure our networks and API keys for the deployment process.
+* Open to the **hardhat.config.js** file. This file will be used to configure our networks and API keys for the deployment process.
+    
 
 Copy and paste the following lines of code into the file for convenience.
 
-
-```
+```javascript
 require("@nomiclabs/hardhat-waffle");
 require("dotenv").config({ path: ".env" });
 
@@ -331,7 +300,7 @@ const API_KEY = process.env.API_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 module.exports = {
-  solidity: "0.8.0",
+  solidity: "0.8.0", // you can change it to the version of Solidity you want
   networks: {
     rinkeby: {
       url: API_KEY,
@@ -339,69 +308,54 @@ module.exports = {
     },
   },
 };
-
-``` 
+```
 
 #### Compile the contract
 
-
-```
+```javascript
  npx hardhat compile
-
-``` 
+```
 
 #### Deploy the contract
 
-
-```
+```javascript
 npx hardhat run scripts/deploy.js --network rinkeby
+```
 
-``` 
+* Voila! Our contract is successfully deployed on the Ethereum RInkeby Test Network!
+    
+* Take note of the contract address that was logged in the console. It will be required on the front end in order to communicate with the smart contract.
+    
 
-- Voilla! Our contract is successfully deployed on the Ethereum RInkeby Test Network!
-
-- Take note of the contract address that was entered into the console. It will be required on the frontend in order to communicate with the smart contract.
-
-
--A new `artifacts` folder is created after a successful deployment. This folder contains a **.json** file with our contract's ABI. Copy it and save it because we'll need it along with the contract address.
-
+\-A new `artifacts` folder is created after a successful deployment. This folder contains a **.json** file with our contract's ABI. Copy it and save it because we'll need it along with the contract address.
 
 ## The Whitelist Frontend Development
 
-Now that we've completed the difficult aspect, let's build our front.
-Communicating directly with a smart contract is difficult for the typical person.
+In the second and last part of this tutorial, we will create a React app, connect it to Metamask, and use ethers.js to call functions on the smart contract.
 
-It is our responsibility as developers to create an interactive interface from which users may send requests to the smart contract.
-
-In the second and last part of this tutorial, we will create a React app, connect it to Metamask, and use ethers.js to call functions.
-
-Essentially, our app will leverage basic React principles such as managing and updating states and calling transactions through functions. Nothing too complicated. I've got you covered.
+Our app will leverage basic React principles such as updating states and making transactions.
 
 #### Installing React.js and ethers.js
 
--  Visit the [official docs](https://reactjs.org/docs/create-a-new-react-app.html) to install and set up React.js on your computer. 
+* Visit the [official docs](https://reactjs.org/docs/create-a-new-react-app.html) to install and set up React.js
+    
+* Install **ethers.js** as a dependency by running the code below
+    
 
-
-- After successfully installing React, install **ethers.js** as a dependency by running this code.
-
-```
+```javascript
 npm install ethers
+```
 
-``` 
+* For the sake of simplicity and convenience, I'm going to do all of my reasoning in the `src` file's root. You can arrange the folder structure as you see fit.
+    
 
-
-- For the sake of simplicity and convenience, I'm going to do all of my reasoning in the `src` file's root. You can arrange the folder structure as you see fit.
-
-
-![Folder Structure](https://cdn.hashnode.com/res/hashnode/image/upload/v1650156597416/7qNEhACf-.png)
-
+![Folder Structure](https://cdn.hashnode.com/res/hashnode/image/upload/v1650156597416/7qNEhACf-.png align="left")
 
 #### Building the frontend
 
 In the `Whitelist.js` file:
 
-
-```
+```javascript
 import { useState } from "react";
 
 
@@ -466,15 +420,11 @@ const [connectedAddress, setConnectedAddress] = useState(null);
 
 
 }
-
-``` 
-
+```
 
 Now that you have the unfiltered app, let us implement all of the blockchain functions and update the states.
 
-
-
-```
+```javascript
 import { useState } from "react";
 import { ethers } from "ethers";
 
@@ -541,17 +491,16 @@ const [connectedAddress, setConnectedAddress] = useState(null);
 
 
 }
+```
 
-``` 
 #### What are Providers and Signers?
 
-- A Provider is an abstraction of an Ethereum network connection that provides a clear, **consistent interface to regular Ethereum node functions.**
+* A Provider is an abstraction of an Ethereum network connection that provides a clear, **consistent interface to regular Ethereum node functions.**
+    
+* A Signer in ethers is an abstraction of an Ethereum Account that may be used\*\* to sign messages and transactions and submit signed transactions to the Ethereum Network\*\* to perform state changes.
+    
 
-
-- A Signer in ethers is an abstraction of an Ethereum Account that may be used** to sign messages and transactions and submit signed transactions to the Ethereum Network** to perform state changes.
-
-
-```
+```javascript
 // the if-else statement checks if the browser has Metamasks installed
 // if installed, it will connect to the first account/address
 
@@ -591,14 +540,11 @@ const [connectedAddress, setConnectedAddress] = useState(null);
     // will log the provider, signer, and contract in the console when successful.
     console.log({provider, signer , contract})
   };
-
-
-``` 
+```
 
 #### Getting the number of whitelisted accounts and joining the whitelist.
 
-
-```
+```javascript
   const getNumWhitelistHandler = async () => {
    // calls the numAddressesWhitelisted public uint from our contract directly
     let number = await contract.numAddressesWhitelisted.length;
@@ -613,14 +559,11 @@ const [connectedAddress, setConnectedAddress] = useState(null);
     setJoinWhiteListText("Succesfully Joined!");
     await getNumWhitelistHandler();
   };
-
-``` 
-
+```
 
 ### Putting the frontend together
 
-
-```
+```javascript
 import { useState } from "react";
 import { ethers } from "ethers";
 import "./styles.css";
@@ -711,31 +654,24 @@ export default function Whitelist() {
     </div>
   );
 }
-
-
-``` 
+```
 
 ### Before connecting to Metamask...
 
-![Before connecting to Metamask](https://cdn.hashnode.com/res/hashnode/image/upload/v1650160437199/kYL9BR5CJ.png)
-
+![Before connecting to Metamask](https://cdn.hashnode.com/res/hashnode/image/upload/v1650160437199/kYL9BR5CJ.png align="left")
 
 ### After connecting to Metamask...
 
-
-![After connecting to Metamask](https://cdn.hashnode.com/res/hashnode/image/upload/v1650160485378/zCfII2zfc.png)
-
+![After connecting to Metamask](https://cdn.hashnode.com/res/hashnode/image/upload/v1650160485378/zCfII2zfc.png align="left")
 
 ### Before you leave
 
-With futher understanding of React, you'll notice that there are several best practices, such as the Custom Hooks , ContextAPI and the [useReducer hook](https://www.michaelasiedu.com/using-reacts-usereducer-hook-to-manage-complex-states), that may be used to make our code more clean and efficient.
+You can use Custom Hooks, ContextAPI, and the [useReducer hook](https://www.michaelasiedu.com/using-reacts-usereducer-hook-to-manage-complex-states) to make the code cleaner.
 
-What are some of the features that you can implement on your own?
-
-I've created [a repository for this lesson](https://github.com/masiedu4/whitelist-smart-contract-solidity-), with separate branches for the smart contract and the frontend. You can look into it.
+Here is the [repository for this lesson](https://github.com/masiedu4/whitelist-smart-contract-solidity-), with separate branches for the smart contract and the front [](https://github.com/masiedu4/whitelist-smart-contract-solidity-)end.
 
 ## Learn More
 
 This blog is dedicated to educating curious individuals who want to learn about technology and improve their skills.
 
-Check out [the blog](https://www.michaelasiedu.com/) to show your support. 
+Check out [the blog](https://www.michaelasiedu.com/) to show your support.
